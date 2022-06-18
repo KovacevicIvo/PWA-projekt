@@ -1,0 +1,123 @@
+body{
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    position: absolute;
+    left: 10%;
+    top: 30px;
+    width: 10%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+nav > div{
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 10px;
+}
+form{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    padding: 0;
+    color: black;
+    background-color: yellow;
+}
+.Glazba{
+    color: white;
+    background-color: purple;
+    padding: 4px;
+}
+.Sport{
+    color: white;
+    background-color: green;
+    padding: 4px;
+}
+.slika{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+section{
+    margin: 10px auto 10px;
+    width: 80%;
+    text-align: left;
+}
+.vijesti{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 10px;
+}
+article{
+    width: 33%;
+    margin: 0;
+}
+.datum{
+    color: gray;
+    margin-bottom: 4px;
+}
+footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: yellow;
+    text-align: center;
+    margin: 10px auto 0;
+    width: 100%;
+}
+.zaglavlje{
+    position: absolute;
+    bottom: 0;
+}
+h1{
+    margin: 5px auto;
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+article p {
+    margin-top: 0px;
+}
+article:hover{ 
+	background-color: #e6e6e6;
+    box-shadow: 0px 0px 4px 4px grey;
+    transition-duration: 0.4s;
+}
+.error{
+    color: red;
+}
+form a{
+    color: blue;
+}
+.login{
+    margin: 50px auto;
+}
+hr{
+    width: 80%;
+    border: 0px;
+    background-color: cyan;
+    color: cyan;
+    height: 6px;
+}
