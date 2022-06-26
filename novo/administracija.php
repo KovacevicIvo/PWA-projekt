@@ -30,7 +30,7 @@
             while($row = mysqli_fetch_array($result)){
                 $id = $row["id"];
                 echo '
-                    <form action="" method="post">
+                    <form action="" method="post" enctype="multipart/form-data">
                         <br>
                         <label for="naslov">Naslov:</label><br>
                         <input type="text" name="naslov"  value="'.$row['naslov'].'"><br><br>
@@ -78,7 +78,9 @@
                 $opis = $_POST["opis"];
                 $sadrzaj = $_POST["sadrzaj"];
                 $kategorija = $_POST["kategorija"];
-                $slika = $_POST["slika"];
+                $slika=$_FILES["slika"]["name"];
+                $temp_direktorij = 'slike/' . $slika;
+                move_uploaded_file($_FILES["slika"]["tmp_name"], $temp_direktorij);
                 $kategorija = strtoupper($kategorija);
                 $datum = date('Y-m-d');
                 $query = "UPDATE vijesti SET Naslov='$naslov' ,opis='$opis',sadrzaj='$sadrzaj',slika='$slika',kategorija='$kategorija',datum='$datum',arhiva='$prikaz' WHERE id=$id";
